@@ -34,7 +34,3 @@ project(":screenshot-kit").projectDir = file("toolkit/screenshot-kit")
 
 include(":uitest-kit")
 project(":uitest-kit").projectDir = file("toolkit/uitest-kit")
-
-// Note: extract-screenshots and demo-app are NOT included here
-// They are dev tools, not published libraries
-// For local development, use toolkit/settings.gradle.kts directly

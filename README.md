@@ -246,6 +246,19 @@ The skill provides:
 - Allure integration setup
 - Common testing patterns
 
+## Known Issues
+
+### buildSrc duplication
+
+`buildSrc/` exists in both root and `toolkit/` directories. This is intentional — Android Studio fails to sync projects when `toolkit/buildSrc` is a symlink to `../buildSrc`.
+
+```
+buildSrc/                      # For sourceControl consumers (root build)
+toolkit/buildSrc/              # For includeBuild consumers (copy, not symlink!)
+```
+
+**TODO:** Find a way to eliminate duplication without breaking Android Studio sync.
+
 ## Requirements
 
 - Java 17+
