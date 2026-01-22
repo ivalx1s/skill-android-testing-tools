@@ -23,7 +23,7 @@ No registry needed — Gradle clones and builds from git tag directly (like SPM)
 ```kotlin
 // settings.gradle.kts
 sourceControl {
-    gitRepository(uri("https://github.com/ivalx1s/android-ui-testing-tools.git")) {
+    gitRepository(uri("ssh://git@github.com/ivalx1s/android-ui-testing-tools.git")) {
         producesModule("com.uitesttools:screenshot-kit")
         producesModule("com.uitesttools:uitest-kit")
     }
