@@ -1,5 +1,5 @@
 ---
-name: android-ui-validation
+name: android-testing-tools
 version: 1.0.0
 description: |
   Android UI testing toolkit with screenshot validation. Use when:
