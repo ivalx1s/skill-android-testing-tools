@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# setup-global-skills.sh - Install android-ui-validation skill globally
+# setup-global-skills.sh - Install android-testing-tools skill globally
 #
 # Creates symlinks in ~/.claude/skills and ~/.codex/skills
 # so the skill is available in all projects.
@@ -12,7 +12,7 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 TOOLKIT_DIR="$(dirname "$SCRIPT_DIR")"
-SKILL_NAME="android-ui-validation"
+SKILL_NAME="android-testing-tools"
 SKILL_SOURCE="${TOOLKIT_DIR}/agents/skills/${SKILL_NAME}"
 
 if [[ ! -d "$SKILL_SOURCE" ]]; then
